@@ -1,33 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Controlled from './Components/Controlled/Controlled';
+import FormData from './Components/FormData/FormData';
+import Uncontroll from './Components/UnControlled/Uncontroll';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(e.target.name.value);
+  //   console.log(e.target.email.value);
+  // }
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* <form onSubmit={handleSubmit}>
+        <input type="text" name='name' placeholder='enter name' />
+        <br />
+        <br />
+        <input type="email" name='email' placeholder='enter email' />
+        <br />
+        <br />
+        <input type="submit" value="submit" />
+      </form> */}
+
+        {/* <FormData></FormData> */}
+
+        {/* <Controlled></Controlled> */}
+        <Uncontroll></Uncontroll>
+
     </>
   )
 }
