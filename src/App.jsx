@@ -2,6 +2,7 @@ import './App.css'
 import Controlled from './Components/Controlled/Controlled';
 import FormData from './Components/FormData/FormData';
 import Uncontroll from './Components/UnControlled/Uncontroll';
+import Products from './ProductsCollections/Products/Products';
 
 function App() {
   // const handleSubmit = (e) => {
@@ -25,7 +26,10 @@ function App() {
         {/* <FormData></FormData> */}
 
         {/* <Controlled></Controlled> */}
-        <Uncontroll></Uncontroll>
+        {/* <Uncontroll></Uncontroll> */}
+        <div>
+          <Products></Products>
+        </div>
 
     </>
   )
