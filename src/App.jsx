@@ -1,8 +1,10 @@
-import './App.css'
-import Controlled from './Components/Controlled/Controlled';
-import FormData from './Components/FormData/FormData';
-import Uncontroll from './Components/UnControlled/Uncontroll';
-import Products from './ProductsCollections/Products/Products';
+import "./App.css";
+import Controlled from "./Components/Controlled/Controlled";
+import FormData from "./Components/FormData/FormData";
+import Uncontroll from "./Components/UnControlled/Uncontroll";
+import FamilyTree from "./FamilyTree/FamilyTree";
+import Grandparent from "./FamilyTree/Grandparent";
+import Products from "./ProductsCollections/Products/Products";
 
 function App() {
   // const handleSubmit = (e) => {
@@ -23,16 +25,17 @@ function App() {
         <input type="submit" value="submit" />
       </form> */}
 
-        {/* <FormData></FormData> */}
+      {/* <FormData></FormData> */}
 
-        {/* <Controlled></Controlled> */}
-        {/* <Uncontroll></Uncontroll> */}
-        <div>
+      {/* <Controlled></Controlled> */}
+      {/* <Uncontroll></Uncontroll> */}
+      {/* <div>
           <Products></Products>
-        </div>
+        </div> */}
 
+      <FamilyTree></FamilyTree>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
